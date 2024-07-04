@@ -11,7 +11,7 @@ const Posts: React.FC = () => {
     const checkCredentials = () => {
       if (!userData) {
         alert("Please enter your credentials to access the data.");
-        navigate("/login");
+        navigate("/");
       }
     };
 
