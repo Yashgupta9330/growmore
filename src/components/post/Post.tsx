@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { Typography, Box } from '@mui/material';
 import axios from 'axios';
-import { PostType } from '../types/Post';  // Ensure the path to Post.ts is correct
+import { PostType } from '../../types/Post';
+  // Ensure the path to Post.ts is correct
 
 const Post: React.FC = () => {
   const [posts, setPosts] = useState<PostType[]>([]);
