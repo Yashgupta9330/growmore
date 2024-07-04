@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Button, TextField } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { z } from "zod";
-import { UserData } from "../types/Userdata";
+import { UserData } from "../../types/Userdata";
+
 
 
 // Define a Zod schema for validation
