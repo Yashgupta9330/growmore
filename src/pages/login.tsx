@@ -4,18 +4,16 @@ import { useEffect } from "react";
 
 
 const Login : React.FC= () => {
-     const userData = localStorage.getItem("userData");
-     const navigate = useNavigate();
 
-  useEffect(() => {
-    const checkCredentials = () => {
-      if (userData) {
-        navigate("/post");
-      }
-    };
+    const userDataString = localStorage.getItem("userData");
+    const navigate = useNavigate();
 
-    checkCredentials();
-  }, [userData, navigate]);
+   useEffect(() => {
+    if (userDataString) {
+        alert("Please Enter your Credentials to Access the Data")
+        return navigate("/post")
+     }  
+  },[])
     
     return(
       <div>

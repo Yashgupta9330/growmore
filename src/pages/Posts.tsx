@@ -16,7 +16,7 @@ const Posts: React.FC = () => {
     };
 
     checkCredentials();
-  }, [userData, navigate]);
+  }, []);
 
   return (
     <div>
