@@ -10,7 +10,6 @@ const Login : React.FC= () => {
 
    useEffect(() => {
     if (userDataString) {
-        alert("Please Enter your Credentials to Access the Data")
         return navigate("/post")
      }  
   },[])
