@@ -28,7 +28,7 @@ const UserForm: React.FC = () => {
       const userData: UserData= result.data;
       localStorage.setItem("userData", JSON.stringify(userData));
       alert("Login Successful!");
-      navigate("/");
+      navigate("/post");
     } 
     else {
       // Handle validation errors (optional)
