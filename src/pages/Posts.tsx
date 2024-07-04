@@ -1,27 +1,13 @@
-import { useEffect } from "react";
-import DepartmentsList from "../components/Department";
-import Post from "../components/Post";
-import { useNavigate } from "react-router-dom";
+import DepartmentsList from "../components/post/Department";
+import Post from "../components/post/Post";
 
 const Posts: React.FC = () => {
-  const userData = localStorage.getItem("userData");
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    const checkCredentials = () => {
-      if (!userData) {
-        alert("Please enter your credentials to access the data.");
-        navigate("/");
-      }
-    };
-
-    checkCredentials();
-  }, []);
+ 
 
   return (
     <div>
       <Post />
-      <DepartmentsList />
+      <DepartmentsList/>
     </div>
   );
 };

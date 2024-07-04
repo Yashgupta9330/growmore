@@ -6,7 +6,8 @@ import Collapse from '@mui/material/Collapse';
 import Checkbox from '@mui/material/Checkbox';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
-import { departmentsData } from '../assets/departmentsData';
+import { departmentsData } from '../../assets/departmentsData';
+
 
 const DepartmentsList = () => {
     const [departments, setDepartments] = useState(departmentsData);
